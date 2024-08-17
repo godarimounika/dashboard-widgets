@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    /* border: 1px solid black; */
+    height: 35px;
+}
+.left-side{
+    display: flex;
+    /* margin-top: 0; */
+    margin: 10px;
+    gap: 4px;
+}
+#dashboard-text{
+    font-size: 16px;
+    font-weight: 900;
+}
+.seach input{
+    height: 40px;
+    width:600px;
+    text-align: center;
+    background-color: whitesmoke;
+    color: black;
+
+}
+.search-icon{
+    position: absolute;
+    right: 20px;
+    color: #888;
+    margin-top: 10px;
+
+}
+.sub-nav-left{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    /* border: 1px solid black; */
+    background-color:whitesmoke;
+}
+.dashboard-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+/* .btn{
+    border: none;
+    background: none;
+    width: 130px;
+    height: 30px;
+ text-align: center;
+ padding-bottom: 3px;
+ font-size: 20px;
+ margin-top: -10px;
+    
+}
+.icon{
+    margin: 0 20px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    padding: 4px;
+    text-align: center;
+} */
+
+
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 130px; /* Ensures consistent width */
+    height: 40px; /* Ensures consistent height */
+    text-align: center;
+}
+
+.btn-icon {
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 4px;
+    width: 40px; /* Ensures consistent width */
+    height: 40px; /* Ensures consistent height */
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.icon:hover,
+.btn:hover {
+    background-color: #f0f0f0;
+}
+.watch-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    padding: 3px;
+    border-radius: 4px;
+    gap: 5px; /* Adjust the gap between icon and text */
+    height: 40px;
+    cursor: pointer;
+}
+
+.watch-icon {
+    font-size: 18px;
+}
+
+.watch-container span {
+    font-size: 14px;
+    cursor: pointer;
+}
+.watch-container:hover{
+    background-color:whitesmoke;
+}
+.main-title{
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+.main-container-wrapper{
+    /* border: 1px solid black; */
+    height: 100vh;
+    border-radius: 30px;
+}
+.main-container{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black; */
+    border-radius: 40px;
+    background-color: whitesmoke;
+    padding: 10px;
+    flex-wrap: wrap;
+    /* box-shadow: 10px 10px 10px whitesmoke; */
+}
+.categories {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of categories to the next line */
+    gap: 16px; /* Space between each category */
+    width: 100%; /* Full width of the container */
+    box-sizing: border-box;
+}
+
+.categories > div {
+    flex: 1 1 calc(33.33% - 16px); 
+    max-width: calc(33.33% - 16px); 
+    border-radius: 30px;
+    margin: 10px 0;
+    border: 1px solid black;
+    padding: 10px; 
+    box-sizing: border-box; 
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.item1 h1{
+    font-size: 14px;
+    margin-top: 50px;
+}
+.item1 button{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+/* Existing styles */
+
+/* Popup styles */
+.popup{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 40%;
+    height: 100vh;
+    background-color: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+        padding: 20px;
+
+}
+  
+  .popup-header {
+    display: flex;
+  
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color:rgb(0, 0, 139);
+    /* border-bottom: 2px solid black; */
+  }
+  
+  .popup-header h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size:30px;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .popup-content {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+  .content-header{
+    display: flex;
+    cursor: pointer;
+    justify-content:space-between ;
+    background-color: white;
+    width: 50%;
+    /* border: 1px solid black; */
+    margin-top: 10px;
+    border-bottom: 2px solid lightgray;
+    padding: 10px;
+
+
+  }
+
+ 
+ .header-items:focus, 
+ .header-items.active {
+     border-bottom: 4px solid black; 
+   
+
+ }
+ 
+ .header-items:hover {
+     border-bottom: 4px solid rgb(49, 22, 183); 
+ }
+ .categories-container{
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ padding: 10px;
+ /* align-items: start; */
+ /* border: 1px solid black; */
+ }
+ .categories-container label{
+    border: 1px solid black;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-content:start;
+    gap: 5px;
+    font-size: 15px;
+
+ }
+.popup-bottom-buttons {
+    display: flex;
+    /* flex-direction: column; */
+    margin-top: 320px;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px;
+
+
+   
+}
+.bottom-btn{
+    align-items: right;
+    justify-content: right;
+    /* background-color: red; */
+    padding: 10px 40px;
+    border-radius: 10px;
+    border-color: rgb(1, 1, 34);
+    background-color: white;
+    cursor: pointer;
+}
+#btn1{
+    background-color: rgb(2, 3, 43);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.add-widget-container {
+    flex: 1 1 100%; 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    margin-top: 20px; /* Space it out from the widgets */
+  }
+  
+  .add-widget-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-widget-button:hover {
+    background-color: #0056b3;
+  }
