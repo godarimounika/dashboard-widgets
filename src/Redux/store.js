@@ -9,14 +9,4 @@ const store = configureStore({
         widgets:Widgetreducer
     }
 });
-
-
-
-
-
-
-
-
-
-
 export default store
